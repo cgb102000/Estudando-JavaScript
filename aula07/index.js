@@ -11,3 +11,4 @@ const reprovado = false; //Boolean (lógico)
 const a = [1,2];
 const b = a;
 console.log(a,b);
+
