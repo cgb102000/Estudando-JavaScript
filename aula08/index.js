@@ -8,8 +8,17 @@ Aritméticos:
 *   /Divisão
 */
 
+/* 
+ORDEM DE PRECEDÊNCIA
+()
+** 
+*   /   %
++   -   
+*/
+
 
 
 const num1 = 5
 const num2 = '10';
-console.log(num1+num2);  //Concatenando variáveis
+const num3 = 10; 
+console.log(num1+num2)*num3;  //Concatenando variáveis
