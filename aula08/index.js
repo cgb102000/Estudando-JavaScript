@@ -1,5 +1,7 @@
+// Aula 08: Operadores Aritméticos em JavaScript
+
 /*
-Aritméticos:
+   Em JavaScript, você pode usar operadores aritméticos para realizar cálculos matemáticos. Alguns dos operadores aritméticos mais comuns incluem:
 
 *   + Adição/Concatenação
 *   ** Potenciação
@@ -8,17 +10,6 @@ Aritméticos:
 *   /Divisão
 */
 
-/* 
-ORDEM DE PRECEDÊNCIA
-()
-** 
-*   /   %
-+   -   
-*/
-
-
-
 const num1 = 5
 const num2 = '10';
-const num3 = 10; 
-console.log(num1+num2)*num3;  //Concatenando variáveis
+console.log(num1+num2);  //Concatenando variáveis
