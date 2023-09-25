@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Solicita ao usuário que insira o nome completo e armazena na variável 'nome'
+        const nome = prompt('Digite seu nome completo:');
+
+        // Obtém a segunda letra do nome e armazena na variável 'segundaLetra'
+        const segundaLetra = nome[0];
+
+        // Exibe o nome do usuário em negrito
+        document.body.innerHTML += `Seu nome é <strong>${nome}</strong> <br/>`;
+
+        // Exibe o número de letras no nome em negrito
+        document.body.innerHTML += `Seu nome tem <strong>${nome.length}</strong> letras <br/>`;
+
+        // Exibe a segunda letra do nome em negrito
+        document.body.innerHTML += `A segunda letra do seu nome é <strong>${segundaLetra}</strong> <br/>`;
+
+        // Exibe a pergunta sobre o índice da letra 'A' no nome
+
+        // Tenta encontrar o índice da letra 'a' (insensível a maiúsculas e minúsculas)
+        document.body.innerHTML += `Qual o primeiro índice da letra A em seu nome <br>`;
+        document.body.innerHTML += `<strong>${nome.toLowerCase().indexOf('a')}</strong> <br>`;
+
+        // Tenta encontrar o último índice da letra 'a' (insensível a maiúsculas e minúsculas)
+        document.body.innerHTML += `Qual o último índice da letra a em seu nome? <br>`;
+        document.body.innerHTML += `<strong>${nome.toLowerCase().lastIndexOf('a')}</strong> <br>`;
+
+        // Exibe as três últimas letras do nome
+
+        document.body.innerHTML += `As 3 últimas letras do seu nome são?`;
+        document.body.innerHTML += `<strong>${nome.slice(-3)}</strong> <br>`;
+
+        // Exibe as palavras do nome
+
+        document.body.innerHTML += `As palavras do seu nome são:<br>`;
+
+        // Divide o nome em palavras e exibe cada palavra em negrito
+        const palavras = nome.split(' ');
+        for (const palavra of palavras) {
+            document.body.innerHTML += `<strong>${palavra}</strong> `;
+        }
+        document.body.innerHTML += '<br>';
+
+        // Exibe o nome com todas as letras maiúsculas em negrito
+        document.body.innerHTML += `Seu nome com letras maiúsculas: <strong>${nome.toUpperCase()}</strong> <br>`;
+
+        // Exibe o nome com todas as letras minúsculas em negrito
+        document.body.innerHTML += `Seu nome com letras minúsculas: <strong>${nome.toLowerCase()}</strong> <br>`;
+
+    </script>
+   
+</body>
+</html>

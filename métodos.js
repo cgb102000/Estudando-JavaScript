@@ -32,3 +32,4 @@ console.log(umaString.toLowerCase()); // Converte a string para minúsculas.
 /*
    Os métodos geralmente alteram o estado do objeto ou realizam alguma operação lógica específica com base nos dados do objeto.
 */
+
