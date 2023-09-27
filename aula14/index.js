@@ -11,3 +11,11 @@ console.log(typeof num1);
 
 console.log(num1.toString(5)); //Apenas colocamos o (2) dentro do médoto;  Se você quiser que ele parece em uma espeficica casa decimal, deve colocar o número dentro dos parenteses, como o exemplo acima toString(5)
 
+
+//Transformando um objeto em um número inteiro
+console.log(Number.isInteger(num1));
+console.log(typeof num1);
+
+
+let temp1 = num2 * 'Olá';
+console.log(Number.isNaN(temp1));
