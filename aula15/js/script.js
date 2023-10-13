@@ -30,3 +30,4 @@ arredondandoCima.innerHTML = `<p>Arredondando para cima: ${Math.ceil(numero)} </
 
 const casasDecimais = document.getElementById('casasDecimais');
 casasDecimais.innerHTML = `<p> Com duas casas decimais: ${numero.toFixed(2)} </p>`; // Formata o número com duas casas decimais e mostra o resultado em 'casasDecimais'
+
