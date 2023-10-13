@@ -1,33 +1,24 @@
-// 012345678910
-
-
-//                0   ,     1   ,   2   ,   3
-const alunos = ['Luiz', 'Maria', 'João',2];
+// Exemplo 1: Arrays em JavaScript
+const alunos = ['Luiz', 'Maria', 'João', 2];
 console.log(alunos);
-//No javascript podemos colocar números e caracteres no mesmo array.
+// Em JavaScript, é possível incluir números e caracteres no mesmo array.
 
-
-
+// Exemplo 2: Acessando elementos de um array
 const nomes = ['Caio', 'Miguel', 'Alex'];
-console.log(nomes[0]);
-console.log(nomes[1]);
-console.log(nomes[2]);
-console.log(nomes[3]); //Também podemos fazer uma busca fora do array
+console.log(nomes[0]); // Acessando o primeiro elemento
+console.log(nomes[1]); // Acessando o segundo elemento
+console.log(nomes[2]); // Acessando o terceiro elemento
+console.log(nomes[3]); // Também é possível fazer uma busca fora do array
 
-
-//Podemos também definir a ordem especifica:
-const sobrenomes = ['Silva', 'Pereira', 'Andrade','Potter'];
-sobrenomes.push('Salomão'); //Podemos adicionar um valor a mais, usando o .push: Push adiciona ao fim do array
-sobrenomes.unshift('teste');
-sobrenomes[0] = 'Pereira'; //alterando
-sobrenomes[1] = 'Silva'; //alterando
-sobrenomes[2] = 'Andrade'; //alterando
+// Exemplo 3: Definindo a ordem específica em um array
+const sobrenomes = ['Silva', 'Pereira', 'Andrade', 'Potter'];
+sobrenomes.push('Salomão'); // Adicionando um valor ao final do array usando .push
+sobrenomes.unshift('teste'); // Adicionando um valor no início do array
+sobrenomes[0] = 'Pereira'; // Alterando o primeiro elemento
+sobrenomes[1] = 'Silva'; // Alterando o segundo elemento
+sobrenomes[2] = 'Andrade'; // Alterando o terceiro elemento
 console.log(sobrenomes);
 
-
-
-
-console.log(sobrenomes.length);
-
-console.log(sobrenomes[3]);
-
+// Exemplo 4: Informações sobre o array
+console.log('Tamanho do array sobrenomes:', sobrenomes.length); // Tamanho do array
+console.log('Elemento na posição 3:', sobrenomes[3]); // Acessando o elemento na posição 3
