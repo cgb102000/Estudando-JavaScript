@@ -11,8 +11,9 @@ const pessoa1 = {
     sobrenome: 'Miranda',
     idade: 25
 };
-
 console.log(pessoa1.nome);
+
+
 
 const pessoa2 = {
     nome: 'Caio',
