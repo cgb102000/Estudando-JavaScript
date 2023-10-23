@@ -1,3 +1,4 @@
+/*
 const nome = 'Caio';   //Escopo global
 
 function qualquer(){
@@ -10,5 +11,4 @@ let sobrenome = 'Silva';
 console.log(nome);
 console.log(sobrenome);
 
-
-
+*/
