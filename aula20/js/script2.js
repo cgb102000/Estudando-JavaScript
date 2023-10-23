@@ -50,3 +50,5 @@ function meuSegundoEscopo() {
 }
 
 meuSegundoEscopo(); // Chama a função
+
+    
