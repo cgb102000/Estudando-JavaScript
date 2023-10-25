@@ -68,3 +68,9 @@ form button:hover{
 form button:active{
     background-color: var(--primary-color-dark);
 }
+
+.paragrafo-resultado{
+    background-color: green;
+    padding: 10px 20px;
+    color: white;
+}
