@@ -12,8 +12,7 @@ const form = document.querySelector('#formulario');
 
 form.addEventListener('submit', function (e) {
     e.preventDefault();
-    console.log('Evento não realizado !');
-    setResultado('Texto criado com sucesso!');
+    const inputPeso = e.target
 
 });
 
@@ -29,6 +28,7 @@ function setResultado(msg) {
     const resultado = document.querySelector('#resultado');
     resultado.innerHTML = ''; //Texto que será criado no <p>
     //resultado.appendChild(p);
-    const p = criaP;
+    const p = criaP();
+    
 
 };
