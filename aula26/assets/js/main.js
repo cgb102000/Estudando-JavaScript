@@ -20,12 +20,23 @@ form.addEventListener('submit', function (e) {
     console.log(peso,altura)
 
     if (!peso){
-        setResultado('Peso inválido');
+        setResultado('Peso inválido',false);
+        return; 
+
 
     } 
+    if (!altura){
+        setResultado('Altura invalida', false);
+        return;
+    }
+    const imc = getImc(peso,altura);
+    console.log(imc);
     
 });
-
+function getImc (peso,altura) {
+    const imc = peso / altura ** 2 ;
+    return imc.toFixed(2);
+}
 function criaP(className){
     const p = document.createElement('p');
     //p.classList.add(className);
@@ -34,11 +45,13 @@ function criaP(className){
 
 };
 
-function setResultado(msg) {
+function setResultado(msg, isValid) {
     const resultado = document.querySelector('#resultado');
     resultado.innerHTML = ''; //Texto que será criado no <p>
     //resultado.appendChild(p);
     const p = criaP();
+    p.innerHTML = msg;
+    resultado.appendChild(p);
     
 
 };
