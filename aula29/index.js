@@ -28,6 +28,8 @@ console.log(diaSemana,diaSemanaTexto);
 
 //const data2 = new Date();
 //const diaSemana2 = data2.getDay();
+function getDiasemanaTexto2(diaSemana2){
+
 
 let diaSemanaTexto2;
 const diaSemana2 = 1;   
@@ -54,6 +56,7 @@ switch (diaSemana2) {
     case 6:
         diaSemanaTexto2 = 'Sábado'
 
-};
+}}
+;
 
 console.log(diaSemana2,diaSemanaTexto2);
